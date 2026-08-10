@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, viewport-fit=cover" />
+  <title>MCD Global | Consultoría Empresarial Integral</title>
+  <meta name="description" content="MCD Global ofrece servicios especializados en consultoría empresarial, contable, fiscal, legal, capital humano, tecnología y soluciones financieras para impulsar el crecimiento de tu empresa." />
+  <meta name="theme-color" content="#1C2F6E" />
+
+  <!-- Google Fonts: Montserrat + Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- GSAP + ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ===== LOADER ===== -->
+<div class="loader" id="loader">
+  <div class="loader-content">
+    <img src="logo.jpeg" alt="MCD Global" class="loader-logo" />
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+    <div class="loader-text">MCD GLOBAL</div>
+  </div>
+</div>
+
+<!-- ===== CURSOR ===== -->
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-outline" id="cursorOutline"></div>
+
+<!-- ===== NAVBAR ===== -->
+<header id="header">
+  <div class="container navbar-inner">
+    <a href="#inicio" class="logo-area">
+      <img src="logo.jpeg" alt="MCD Global" class="nav-logo-img" />
+    </a>
+    <div class="menu-icon" id="menuToggle">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#nosotros">Quiénes Somos</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#por-que">¿Por qué Elegirnos?</a></li>
+      <li><a href="#proceso">Proceso</a></li>
+      <li><a href="#sectores">Sectores</a></li>
+      <li><a href="#contacto" class="nav-cta">Contacto</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===== HERO ===== -->
+  <section id="inicio" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <i class="fas fa-briefcase"></i>&nbsp; Consultoría Empresarial Integral
+        </div>
+        <h1 class="hero-title">
+          Soluciones integrales para el <span class="hero-accent">crecimiento</span> de tu empresa.
+        </h1>
+        <p class="hero-sub">Consultoría especializada en administración, fiscalidad, derecho, capital humano y tecnología.</p>
+        <p class="hero-desc">
+          En MCD Global ayudamos a empresas y emprendedores a optimizar su operación, fortalecer su administración y cumplir con sus obligaciones legales, fiscales y financieras. Nuestro enfoque integral impulsa el crecimiento, la eficiencia y la toma de decisiones.
+        </p>
+        <div class="hero-buttons">
+          <a href="#contacto" class="btn-primary"><i class="fas fa-paper-plane"></i> Contáctanos</a>
+          <a href="#servicios" class="btn-outline"><i class="fas fa-th-large"></i> Ver Servicios</a>
+        </div>
+      </div>
+      <div class="hero-card-wrap">
+        <div class="hero-float-card">
+          <img src="logo.jpeg" alt="MCD Global" class="hero-card-logo" />
+          <h3>MCD Global</h3>
+          <p>Firma de Consultoría</p>
+          <div class="hero-card-chips">
+            <span><i class="fas fa-check-circle"></i> Fiscal</span>
+            <span><i class="fas fa-check-circle"></i> Legal</span>
+            <span><i class="fas fa-check-circle"></i> Financiero</span>
+            <span><i class="fas fa-check-circle"></i> RRHH</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Descubre más</span>
+      <i class="fas fa-chevron-down bounce"></i>
+    </div>
+  </section>
+
+  <!-- ===== QUIÉNES SOMOS ===== -->
+  <section id="nosotros" class="nosotros">
+    <div class="container">
+      <div class="section-header">
+        <h2><i class="fas fa-building"></i> Quiénes Somos</h2>
+        <div class="section-underline"></div>
+        <p>Somos el aliado estratégico que tu empresa necesita</p>
+      </div>
+      <div class="nosotros-grid">
+        <div class="nosotros-texto gs-fade-left">
+          <p><strong>MCD Global</strong> es una firma de consultoría empresarial especializada en brindar soluciones integrales para organizaciones de distintos sectores. Nuestro equipo multidisciplinario combina experiencia en las áreas contable, fiscal, legal, administrativa, financiera, recursos humanos y tecnología para ofrecer servicios personalizados.</p>
+          <p style="margin-top:1rem;">Trabajamos bajo un enfoque de mejora continua, acompañando a nuestros clientes en cada etapa de su desarrollo mediante estrategias eficientes, cumplimiento normativo y soluciones orientadas a resultados.</p>
+
+          <div class="filosofia-tabs">
+            <button class="ftab active" data-target="mision"><i class="fas fa-bullseye"></i> Misión</button>
+            <button class="ftab" data-target="vision"><i class="fas fa-eye"></i> Visión</button>
+            <button class="ftab" data-target="valores"><i class="fas fa-star"></i> Valores</button>
+          </div>
+          <div class="ftab-content">
+            <div class="ftab-panel active" id="tab-mision">
+              <p><i class="fas fa-quote-left quote-icon"></i> Brindar soluciones empresariales integrales que permitan a nuestros clientes optimizar sus procesos, fortalecer su administración y alcanzar un crecimiento sostenible mediante servicios profesionales de alta calidad.</p>
+            </div>
+            <div class="ftab-panel" id="tab-vision">
+              <p><i class="fas fa-quote-left quote-icon"></i> Ser una firma de consultoría reconocida por la excelencia de sus servicios, la confianza de sus clientes y la capacidad de generar valor a través de soluciones estratégicas e innovadoras.</p>
+            </div>
+            <div class="ftab-panel" id="tab-valores">
+              <div class="valores-chips">
+                <span class="vchip"><i class="fas fa-medal"></i> Profesionalismo</span>
+                <span class="vchip"><i class="fas fa-handshake"></i> Integridad</span>
+                <span class="vchip"><i class="fas fa-heart"></i> Compromiso</span>
+                <span class="vchip"><i class="fas fa-lock"></i> Confidencialidad</span>
+                <span class="vchip"><i class="fas fa-lightbulb"></i> Innovación</span>
+                <span class="vchip"><i class="fas fa-shield-alt"></i> Responsabilidad</span>
+                <span class="vchip"><i class="fas fa-users"></i> Trabajo en equipo</span>
+                <span class="vchip"><i class="fas fa-chart-line"></i> Orientación a resultados</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nosotros-visual gs-fade-right">
+          <div class="nosotros-img-wrap">
+            <img src="hero.jpg" alt="Consultoría empresarial" class="nosotros-img" />
+            <div class="nosotros-badge-float">
+              <i class="fas fa-award"></i>
+              <span>Excelencia y Calidad</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICIOS ===== -->
+  <section id="servicios" class="servicios">
+    <div class="container">
+      <div class="section-header">
+        <h2><i class="fas fa-cogs"></i> Nuestros Servicios</h2>
+        <div class="section-underline"></div>
+        <p>Soluciones diseñadas para fortalecer tu empresa</p>
+      </div>
+      <div class="servicios-grid">
+
+        <!-- Card 1 -->
+        <div class="servicio-card gs-card">
+          <div class="servicio-icon-wrap">
+            <i class="fas fa-chart-line servicio-icon"></i>
+          </div>
+          <h3>Consultoría Empresarial</h3>
+          <p>Ayudamos a las organizaciones a optimizar sus procesos internos mediante estrategias administrativas que fortalecen la operación.</p>
+          <ul class="lista-detalle">
+            <li><i class="fas fa-angle-right"></i> Planeación estratégica</li>
+            <li><i class="fas fa-angle-right"></i> Administración empresarial</li>
+            <li><i class="fas fa-angle-right"></i> Supervisión de procesos</li>
+            <li><i class="fas fa-angle-right"></i> Gestión administrativa</li>
+            <li><i class="fas fa-angle-right"></i> Optimización organizacional</li>
+          </ul>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="servicio-card gs-card">
+          <div class="servicio-icon-wrap">
+            <i class="fas fa-file-invoice-dollar servicio-icon"></i>
+          </div>
+          <h3>Consultoría Contable y Fiscal</h3>
+          <p>Asesoría especializada para el correcto cumplimiento de las obligaciones contables y fiscales de tu empresa.</p>
+          <ul class="lista-detalle">
+            <li><i class="fas fa-angle-right"></i> Contabilidad</li>
+            <li><i class="fas fa-angle-right"></i> Auditorías</li>
+            <li><i class="fas fa-angle-right"></i> Asesoría fiscal</li>
+            <li><i class="fas fa-angle-right"></i> Implementación de sistemas contables</li>
+            <li><i class="fas fa-angle-right"></i> Consultoría financiera</li>
+          </ul>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="servicio-card gs-card">
+          <div class="servicio-icon-wrap">
+            <i class="fas fa-balance-scale servicio-icon"></i>
+          </div>
+          <h3>Consultoría Legal</h3>
+          <p>Acompañamiento jurídico integral para empresas y empresarios en diversas áreas del derecho.</p>
+          <ul class="lista-detalle">
+            <li><i class="fas fa-angle-right"></i> Derecho corporativo</li>
+            <li><i class="fas fa-angle-right"></i> Derecho mercantil</li>
+            <li><i class="fas fa-angle-right"></i> Derecho administrativo</li>
+            <li><i class="fas fa-angle-right"></i> Derecho civil</li>
+            <li><i class="fas fa-angle-right"></i> Asesoría legal empresarial</li>
+          </ul>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="servicio-card gs-card">
+          <div class="servicio-icon-wrap">
+            <i class="fas fa-users servicio-icon"></i>
+          </div>
+          <h3>Capital Humano</h3>
+          <p>Soluciones para el desarrollo organizacional y la correcta gestión del talento humano.</p>
+          <ul class="lista-detalle">
+            <li><i class="fas fa-angle-right"></i> Reclutamiento y selección</li>
+            <li><i class="fas fa-angle-right"></i> Elaboración de contratos</li>
+            <li><i class="fas fa-angle-right"></i> Evaluaciones psicométricas</li>
+            <li><i class="fas fa-angle-right"></i> Capacitación</li>
+            <li><i class="fas fa-angle-right"></i> Administración de personal</li>
+          </ul>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="servicio-card gs-card">
+          <div class="servicio-icon-wrap">
+            <i class="fas fa-laptop-code servicio-icon"></i>
+          </div>
+          <h3>Tecnología e Innovación</h3>
+          <p>Soluciones tecnológicas que modernizan los procesos y fortalecen la infraestructura digital de tu empresa.</p>
+          <ul class="lista-detalle">
+            <li><i class="fas fa-angle-right"></i> Desarrollo de software</li>
+            <li><i class="fas fa-angle-right"></i> Mantenimiento de sistemas</li>
+            <li><i class="fas fa-angle-right"></i> Sistemas administrativos</li>
+            <li><i class="fas fa-angle-right"></i> Gestión de información</li>
+            <li><i class="fas fa-angle-right"></i> Ciberseguridad</li>
+          </ul>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="servicio-card gs-card">
+          <div class="servicio-icon-wrap">
+            <i class="fas fa-coins servicio-icon"></i>
+          </div>
+          <h3>Soluciones Financieras</h3>
+          <p>Estrategias que fortalecen la administración financiera mediante herramientas para el análisis y gestión de riesgos.</p>
+          <ul class="lista-detalle">
+            <li><i class="fas fa-angle-right"></i> Consultoría financiera</li>
+            <li><i class="fas fa-angle-right"></i> Gestión financiera</li>
+            <li><i class="fas fa-angle-right"></i> Análisis de riesgos</li>
+            <li><i class="fas fa-angle-right"></i> Planeación financiera</li>
+            <li><i class="fas fa-angle-right"></i> Optimización de recursos</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== POR QUÉ ELEGIRNOS ===== -->
+  <section id="por-que" class="por-que">
+    <div class="container">
+      <div class="section-header">
+        <h2><i class="fas fa-trophy"></i> ¿Por qué Elegirnos?</h2>
+        <div class="section-underline"></div>
+        <p>Nuestro compromiso es aportar valor a cada empresa</p>
+      </div>
+      <div class="porq-grid">
+        <div class="porq-texto gs-fade-left">
+          <p>En MCD Global entendemos que cada organización enfrenta desafíos distintos. Por ello desarrollamos soluciones personalizadas que permiten optimizar procesos, mejorar la productividad y fortalecer la estructura empresarial.</p>
+          <p style="margin-top:1rem;">Nos distinguimos por ofrecer un servicio cercano, profesional y estratégico, acompañando a nuestros clientes en la toma de decisiones que impulsan el crecimiento de sus negocios.</p>
+          <a href="#contacto" class="btn-azul" style="margin-top:2rem; display:inline-flex; align-items:center; gap:.5rem;">
+            <i class="fas fa-arrow-right"></i> Comenzar ahora
+          </a>
+        </div>
+        <div class="beneficios-lista gs-fade-right">
+          <div class="beneficio-item">
+            <div class="ben-icon"><i class="fas fa-user-check"></i></div>
+            <div>
+              <strong>Atención personalizada</strong>
+              <p>Cada cliente recibe un servicio adaptado a sus necesidades específicas.</p>
+            </div>
+          </div>
+          <div class="beneficio-item">
+            <div class="ben-icon"><i class="fas fa-sitemap"></i></div>
+            <div>
+              <strong>Equipo multidisciplinario</strong>
+              <p>Expertos en diversas áreas trabajando de forma coordinada.</p>
+            </div>
+          </div>
+          <div class="beneficio-item">
+            <div class="ben-icon"><i class="fas fa-puzzle-piece"></i></div>
+            <div>
+              <strong>Soluciones integrales</strong>
+              <p>Abordamos todos los aspectos clave de tu empresa en un solo lugar.</p>
+            </div>
+          </div>
+          <div class="beneficio-item">
+            <div class="ben-icon"><i class="fas fa-chess"></i></div>
+            <div>
+              <strong>Enfoque estratégico</strong>
+              <p>Decisiones basadas en análisis riguroso y experiencia acumulada.</p>
+            </div>
+          </div>
+          <div class="beneficio-item">
+            <div class="ben-icon"><i class="fas fa-lock"></i></div>
+            <div>
+              <strong>Confidencialidad garantizada</strong>
+              <p>Tu información siempre está protegida bajo estrictos protocolos.</p>
+            </div>
+          </div>
+          <div class="beneficio-item">
+            <div class="ben-icon"><i class="fas fa-chart-bar"></i></div>
+            <div>
+              <strong>Orientación a resultados</strong>
+              <p>Medimos el impacto real de cada acción en tu negocio.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROCESO ===== -->
+  <section id="proceso" class="proceso">
+    <div class="proceso-overlay"></div>
+    <div class="container">
+      <div class="section-header light">
+        <h2><i class="fas fa-route"></i> Nuestro Proceso</h2>
+        <div class="section-underline light"></div>
+        <p>Así trabajamos contigo, paso a paso</p>
+      </div>
+      <div class="proceso-steps">
+        <div class="proceso-step gs-step">
+          <div class="step-num">01</div>
+          <div class="step-icon-wrap"><i class="fas fa-search step-ico"></i></div>
+          <h3>Diagnóstico</h3>
+          <p>Analizamos la situación actual de tu empresa para identificar necesidades y oportunidades de mejora.</p>
+        </div>
+        <div class="proceso-connector gs-connector"><i class="fas fa-chevron-right"></i></div>
+        <div class="proceso-step gs-step">
+          <div class="step-num">02</div>
+          <div class="step-icon-wrap"><i class="fas fa-clipboard-list step-ico"></i></div>
+          <h3>Planeación</h3>
+          <p>Diseñamos una estrategia personalizada alineada con los objetivos de tu organización.</p>
+        </div>
+        <div class="proceso-connector gs-connector"><i class="fas fa-chevron-right"></i></div>
+        <div class="proceso-step gs-step">
+          <div class="step-num">03</div>
+          <div class="step-icon-wrap"><i class="fas fa-rocket step-ico"></i></div>
+          <h3>Implementación</h3>
+          <p>Ejecutamos las soluciones propuestas con acompañamiento profesional en todo momento.</p>
+        </div>
+        <div class="proceso-connector gs-connector"><i class="fas fa-chevron-right"></i></div>
+        <div class="proceso-step gs-step">
+          <div class="step-num">04</div>
+          <div class="step-icon-wrap"><i class="fas fa-chart-line step-ico"></i></div>
+          <h3>Seguimiento</h3>
+          <p>Evaluamos resultados y proponemos mejoras continuas para garantizar el crecimiento.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECTORES ===== -->
+  <section id="sectores" class="sectores">
+    <div class="container">
+      <div class="section-header">
+        <h2><i class="fas fa-globe-americas"></i> Sectores que Atendemos</h2>
+        <div class="section-underline"></div>
+        <p>Trabajamos con empresas de distintos giros y tamaños, con soluciones adaptadas a cada organización.</p>
+      </div>
+      <div class="sectores-wrapper">
+        <div class="sector-chip gs-chip"><i class="fas fa-industry"></i> Empresas Industriales</div>
+        <div class="sector-chip gs-chip"><i class="fas fa-store"></i> Empresas Comerciales</div>
+        <div class="sector-chip gs-chip"><i class="fas fa-concierge-bell"></i> Empresas de Servicios</div>
+        <div class="sector-chip gs-chip"><i class="fas fa-building"></i> Corporativos</div>
+        <div class="sector-chip gs-chip"><i class="fas fa-rocket"></i> Emprendedores</div>
+        <div class="sector-chip gs-chip"><i class="fas fa-lightbulb"></i> Startups</div>
+        <div class="sector-chip gs-chip"><i class="fas fa-home"></i> Empresas Familiares</div>
+        <div class="sector-chip gs-chip"><i class="fas fa-landmark"></i> Organizaciones Privadas</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <section class="cta-banner">
+    <div class="cta-glow"></div>
+    <div class="container cta-inner">
+      <div class="cta-text">
+        <h3>¿Listo para transformar tu empresa?</h3>
+        <p>Nuestro equipo de expertos está listo para brindarte la asesoría que necesitas.</p>
+      </div>
+      <a href="#contacto" class="btn-white">
+        <i class="fas fa-paper-plane"></i> Contáctanos ahora
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTO ===== -->
+  <section id="contacto" class="contacto">
+    <div class="container">
+      <div class="section-header">
+        <h2><i class="fas fa-envelope-open-text"></i> Contacto</h2>
+        <div class="section-underline"></div>
+        <p>Estamos listos para ayudarte. Ponte en contacto con nuestro equipo.</p>
+      </div>
+      <div class="contacto-flex">
+        <div class="contacto-info gs-fade-left">
+          <div class="contacto-item">
+            <div class="contacto-ico"><i class="fas fa-envelope"></i></div>
+            <div>
+              <strong>Correo Electrónico</strong>
+              <a href="mailto:ventas@mcdglobal.com.mx">ventas@mcdglobal.com.mx</a>
+            </div>
+          </div>
+          <div class="contacto-item">
+            <div class="contacto-ico"><i class="fas fa-comments"></i></div>
+            <div>
+              <strong>Atención personalizada</strong>
+              <p>Nuestro equipo multidisciplinario responde a cada consulta con soluciones específicas para tu empresa.</p>
+            </div>
+          </div>
+          <div class="contacto-item">
+            <div class="contacto-ico"><i class="fas fa-clock"></i></div>
+            <div>
+              <strong>Respuesta rápida</strong>
+              <p>Nos comprometemos a dar seguimiento oportuno a cada solicitud.</p>
+            </div>
+          </div>
+        </div>
+        <div class="contacto-form-wrap gs-fade-right">
+          <form class="contacto-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cname"><i class="fas fa-user"></i> Nombre completo *</label>
+                <input type="text" id="cname" name="name" placeholder="Tu nombre completo" required />
+              </div>
+              <div class="form-group">
+                <label for="cempresa"><i class="fas fa-building"></i> Empresa</label>
+                <input type="text" id="cempresa" name="empresa" placeholder="Nombre de tu empresa" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="cemail"><i class="fas fa-envelope"></i> Correo electrónico *</label>
+              <input type="email" id="cemail" name="email" placeholder="tu@correo.com" required />
+            </div>
+            <div class="form-group">
+              <label for="cservicio"><i class="fas fa-list"></i> Servicio de interés</label>
+              <select id="cservicio" name="servicio">
+                <option value="">Selecciona un servicio...</option>
+                <option>Consultoría Empresarial</option>
+                <option>Consultoría Contable y Fiscal</option>
+                <option>Consultoría Legal</option>
+                <option>Capital Humano</option>
+                <option>Tecnología e Innovación</option>
+                <option>Soluciones Financieras</option>
+                <option>Múltiples servicios</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="cmensaje"><i class="fas fa-comment-alt"></i> Mensaje *</label>
+              <textarea id="cmensaje" name="mensaje" rows="5" placeholder="Cuéntanos sobre tu empresa y cómo podemos ayudarte..." required></textarea>
+            </div>
+            <button type="submit" class="btn-submit" id="submitBtn">
+              <i class="fas fa-paper-plane"></i> Enviar mensaje
+            </button>
+            <div class="form-success" id="formSuccess">
+              <i class="fas fa-check-circle"></i>
+              <p>¡Mensaje enviado con éxito! Nos pondremos en contacto contigo pronto.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <img src="logo.jpeg" alt="MCD Global" class="footer-logo" />
+      <p>Firma de consultoría empresarial especializada en brindar soluciones integrales para organizaciones de distintos sectores.</p>
+    </div>
+    <div class="footer-links-group">
+      <h4><i class="fas fa-sitemap"></i> Navegación</h4>
+      <ul>
+        <li><a href="#inicio"><i class="fas fa-angle-right"></i> Inicio</a></li>
+        <li><a href="#nosotros"><i class="fas fa-angle-right"></i> Quiénes Somos</a></li>
+        <li><a href="#servicios"><i class="fas fa-angle-right"></i> Servicios</a></li>
+        <li><a href="#proceso"><i class="fas fa-angle-right"></i> Proceso</a></li>
+        <li><a href="#contacto"><i class="fas fa-angle-right"></i> Contacto</a></li>
+      </ul>
+    </div>
+    <div class="footer-links-group">
+      <h4><i class="fas fa-cogs"></i> Servicios</h4>
+      <ul>
+        <li><a href="#servicios"><i class="fas fa-angle-right"></i> Consultoría Empresarial</a></li>
+        <li><a href="#servicios"><i class="fas fa-angle-right"></i> Consultoría Contable</a></li>
+        <li><a href="#servicios"><i class="fas fa-angle-right"></i> Consultoría Legal</a></li>
+        <li><a href="#servicios"><i class="fas fa-angle-right"></i> Capital Humano</a></li>
+        <li><a href="#servicios"><i class="fas fa-angle-right"></i> Tecnología e Innovación</a></li>
+        <li><a href="#servicios"><i class="fas fa-angle-right"></i> Soluciones Financieras</a></li>
+      </ul>
+    </div>
+    <div class="footer-contact-group">
+      <h4><i class="fas fa-envelope"></i> Contacto</h4>
+      <a href="mailto:ventas@mcdglobal.com.mx" class="footer-email">
+        <i class="fas fa-envelope"></i> ventas@mcdglobal.com.mx
+      </a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <p>&copy; 2025 MCD Global. Todos los derechos reservados.</p>
+      <p class="footer-tagline">Soluciones integrales para el crecimiento de tu empresa.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Scroll to top -->
+<button class="scroll-top-btn" id="scrollTop" aria-label="Volver arriba">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+<script src="main.js"></script>
+</body>
+</html>
